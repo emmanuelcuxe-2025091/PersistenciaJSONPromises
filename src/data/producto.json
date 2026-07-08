@@ -1,12 +1,32 @@
 [
-    {
-        "id": 1,
-        "nombre": "",
-        "descripcion": "",
-        "precio": 1,
-        "stock": 1,
-        "marca": "",
-        "estado": "",
-        "categoria": ""
-    }
+  {
+    "id": 1,
+    "nombre": "",
+    "descripcion": "",
+    "precio": 1,
+    "stock": 1,
+    "marca": "",
+    "estado": "",
+    "categoria": ""
+  },
+  {
+    "id": 1,
+    "nombre": "Leche",
+    "descripcion": "Leche Entera",
+    "precio": 10,
+    "stock": 20,
+    "marca": "Dos Pinos",
+    "estado": "Activo",
+    "categoria": "Bebidas"
+  },
+  {
+    "id": 1,
+    "nombre": "Leche",
+    "descripcion": "Leche Entera",
+    "precio": 10,
+    "stock": 20,
+    "marca": "Dos Pinos",
+    "estado": "Activo",
+    "categoria": "Bebidas"
+  }
 ]
