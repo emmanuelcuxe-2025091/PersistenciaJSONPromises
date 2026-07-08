@@ -1,0 +1,1 @@
+export type Categoria = "Alimentos" | "Bebidas" | "Ropa" | "Electrodomesticos" | "Limpieza" | "Otros";
