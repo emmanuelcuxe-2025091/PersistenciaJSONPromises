@@ -1,5 +1,5 @@
-import { Producto } from "../models/producto";
-import { leerProductos, guardarProductos } from "../persistence/productoPersistence";
+import { Producto } from '../models/producto';
+import { leerProductos, guardarProductos } from '../persistence/productoPersistence';
 
 export function validarProducto(producto: Producto): boolean {
 

@@ -1,5 +1,5 @@
-import { readFile, writeFile } from "fs/promises";
-import { Cliente } from "../models/cliente";
+import { readFile, writeFile } from 'fs/promises';
+import { Cliente } from '../models/cliente';
 
 export async function leerClientes(): Promise<Cliente[]> {
     try {
