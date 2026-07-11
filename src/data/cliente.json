@@ -7,14 +7,5 @@
     "telefono": 1,
     "email": "",
     "tarjetaCredito": 1
-  },
-  {
-    "id": 1,
-    "nombre": "Juan",
-    "apellido": "Pérez",
-    "contrasena": "123456",
-    "telefono": 12345678,
-    "email": "juan@email.com",
-    "tarjetaCredito": 1234567812345678
   }
 ]
