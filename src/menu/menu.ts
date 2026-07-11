@@ -1,15 +1,7 @@
-import { Producto } from "../models/producto";
-import { Cliente } from "../models/cliente";
-
-import {
-    leerProductos,
-    guardarProductos
-} from "../persistence/productoPersistence";
-
-import {
-    leerClientes,
-    guardarClientes
-} from "../persistence/clientePersistence";
+import { agregarProducto } from '../services/productoService';
+import { agregarCliente } from '../services/clienteService';
+import { Producto } from '../models/producto';
+import { Cliente } from '../models/cliente';
 
 export async function mostrarMenu(): Promise<void> {
 
@@ -24,32 +16,20 @@ export async function mostrarMenu(): Promise<void> {
         categoria: "Bebidas"
     };
 
-    const productos = await leerProductos();
-
-    productos.push(producto);
-
-    await guardarProductos(productos);
-
-    console.log("===== PRODUCTOS =====");
-    console.log(await leerProductos());
+    console.log("---- PRODUCTOS ----");
+    await agregarProducto(producto);
 
     const cliente: Cliente = {
         id: 1,
-        nombre: "Juan",
-        apellido: "Pérez",
-        contrasena: "123456",
+        nombre: "Emmanuel",
+        apellido: "Cuxé",
+        contrasena: "asdw1234",
         telefono: 12345678,
-        email: "juan@email.com",
+        email: "ecuxe-2025091@kinal.edu.gt",
         tarjetaCredito: 1234567812345678
     };
 
-    const clientes = await leerClientes();
-
-    clientes.push(cliente);
-
-    await guardarClientes(clientes);
-
-    console.log("===== CLIENTES =====");
-    console.log(await leerClientes());
+    console.log("---- CLIENTES ----");
+    await agregarCliente(cliente);
     
 }
